@@ -235,6 +235,23 @@ body {
     transform: translateY(0);
 }
 
+/* Special Project Card (Class Projects) */
+.project-card--special {
+    background: linear-gradient(135deg, #0b1020 0%, #111827 60%);
+    border-color: #10b981;
+    box-shadow: 0 10px 25px -10px rgba(16, 185, 129, 0.4);
+}
+
+.project-card--special:hover {
+    box-shadow: 0 30px 60px -15px rgba(16, 185, 129, 0.5);
+}
+
+.project-image--special {
+    height: 200px;
+    background: radial-gradient(800px 200px at 10% 0%, rgba(16,185,129,0.35), transparent),
+                radial-gradient(600px 200px at 90% 100%, rgba(5,150,105,0.35), transparent);
+}
+
 /* Work Experience Section */
 .experience-section {
     margin-bottom: 80px;
@@ -349,6 +366,52 @@ body {
     padding: 40px 0;
     text-align: center;
     border-top: 3px solid #10b981;
+}
+
+/* Class Projects Page */
+.class-projects-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.class-project-item {
+    background: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.class-project-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(16, 185, 129, 0.2), 0 10px 10px -5px rgba(16, 185, 129, 0.1);
+    border-color: #10b981;
+}
+
+.cpi-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #f9fafb;
+    margin-bottom: 6px;
+}
+
+.cpi-meta {
+    font-size: 0.9rem;
+    color: #10b981;
+    margin-bottom: 12px;
+}
+
+.cpi-description {
+    color: #9ca3af;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.cpi-skills {
+    color: #d1d5db;
+    font-size: 0.95rem;
 }
 
 .footer-content {
