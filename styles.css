@@ -237,7 +237,8 @@ body {
 
 /* Special Project Card (Class Projects) */
 .project-card--special {
-    background: linear-gradient(135deg, #0b1020 0%, #111827 60%);
+    /* Green-accented background to distinguish from default blue/gray cards */
+    background: linear-gradient(135deg, #064e3b 0%, #065f46 50%, #0f172a 100%);
     border-color: #10b981;
     box-shadow: 0 10px 25px -10px rgba(16, 185, 129, 0.4);
 }
